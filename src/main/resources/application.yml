@@ -1,0 +1,48 @@
+
+
+server:
+  port: 2020
+
+
+spring:
+  application:
+    name: activiti_learn
+  # dev环境
+  profiles:
+    active: dev
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/activiti?characterEncoding=utf8&useSSL=false
+  mail:
+    host: smtp.mxhichina.com  #(邮箱服务器)
+    username: lutao.lv@bandweaver.cn	#(发送邮件的邮箱服务地址)
+    password: bohui@banyechan1218	    #(上面获取的授权码code)
+    port: 465		#(端口)
+    default-encoding: UTF-8
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+
+
+
+
+
+
+
+
+#sql语句打印
+logging:
+  level:
+    com:
+      bandweaver:
+        maxtunnelcommon:
+          mapper: debug
