@@ -9,7 +9,6 @@ import org.activiti.engine.delegate.Expression;
 import org.activiti.engine.delegate.JavaDelegate;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.banyechan.activiti.entity.StudentModel;
 import com.banyechan.activiti.service.StudentService;

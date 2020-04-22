@@ -61,6 +61,12 @@ public class ActivitiConfig {
         processEngineConfiguration.setMailServerPassword("bohui@banyechan1218");
         processEngineConfiguration.setMailServerUseSSL(true);
 
+        processEngineConfiguration.setJobExecutorActivate(false);//JobExecutor是管理几个线程计时器的组成部分,JobExecutor对多线程的处理较为笨重缓慢
+        processEngineConfiguration.setAsyncExecutorEnabled(false);//定义为true，使用AsyncExecutor代替默认的JobExecutor;
+        processEngineConfiguration.setAsyncExecutorActivate(false);//定义为true，工作流引擎在启动时就建立启动AsyncExecutor线程
+        
+        
+
         return processEngineConfiguration;
     }
 
